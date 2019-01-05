@@ -5,68 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>HTML5</title>
+    <link href="../../css/style_css.css" rel="stylesheet" type="text/css">
+    <title>CSS3</title>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header id="header_css">
             <h1>
                 CSS3
             </h1>
         </header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../../index.html">Inicio</a>
+        <nav class="menu">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../../index.html">Inicio</a>
                 </li>
-                <li>
-                    <a href="../html5/index.html">HTML5</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html5/index.html">HTML5</a>
                 </li>
-                <li>
-                    CSS3
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">CSS3</a>
                 </li>
-                <li>
-                    <a href="../responsive_web/index.html">Responsive Web</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../responsive_web/index.html">Responsive Web</a>
                 </li>
-                <li>
-                    <a href="../amp/index.html">AMP</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../amp/index.html">AMP</a>
                 </li>
             </ul>
         </nav>
-        <aside class="">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Definición</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <section>
-            <article>
-                <h2>Definición</h2>
-                <p>
-                    Cascade Style Sheet o Hojas de estilo en cascada, es el código que usa para dar un estilo a las páginas web, es decir,
-                     css3 permite darle un estilo propio a las páginas web. <strong>CSS3</strong> es la version que actualmente se usa para
-                     poder trabajar con <em>HTML5</em>.
-                </p>
-                <p>
-                    La estructura básica de <strong>CSS3</strong> esta explicada en la siguiente imagen:
-                    <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics">
-                        <img src="https://mdn.mozillademos.org/files/11925/csspartes.png" alt="Estructura Básica" class="responsive">
-                    </a>
-                </p>
-            </article>
-        </section>
+        <div class="row">
+            <div class="col-3">
+                <aside>
+                    <nav>
+                        <ul>
+                            <li>
+                                Definición
+                            </li>
+                            <li>
+                                <a href="#">Unidades Relativas y Absolutas</a>
+                            </li>
+                            <li>
+                                <a href="#">ID y CLASS</a>
+                            </li>
+                            <li>
+                                <a href="#">Media Queries en CSS</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    ¿Cómo funciona el CSS3?
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+            <div class="col-9">
+                <section>
+                    <article>
+                        <h2>Definición</h2>
+                        <p>
+                            Cascade Style Sheet o Hojas de estilo en cascada, es el código que usa para dar un estilo a las páginas web, es decir,
+                             css3 permite darle un estilo propio a las páginas web. <strong>CSS3</strong> es la version que actualmente se usa para
+                             poder trabajar con <em>HTML5</em>.
+                        </p>
+                        <p>
+                            La estructura básica de <strong>CSS3</strong> esta explicada en la siguiente imagen:
+                            <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics">
+                                <img src="https://mdn.mozillademos.org/files/11925/csspartes.png" alt="Estructura Básica" class="img-fluid">
+                            </a>
+                        </p>
+                        <p>
+                            Vamos a explicar a detalle la información que nos aparecen en la imágen de arriba:
+                        </p>
+                        <section>
+                            <dt>
+                                Selector
+                            </dt>
+                            <dd>
+                                - Es el elemento <em>HTML</em> con que comienza la regla, esta seleccionas los elementos o el elemento al que se
+                                se le quiere dar estilo (en este caso al elemento <i>p</i>).
+                            </dd>
+                            <dt>
+                                Declaración
+                            </dt>
+                            <dd>
+                                - Una sola regla como <code>color:red</code>; especifica a cual de las <em>propiedades</em> del elemento quieres dar estilo,
+                                es decir, cuantos estilos quieres dar al elemento en juego, puedes aplicar las reglas que tu desees siempre y estas no se
+                                interpongan a otras.
+                            </dd>
+                            <dt>
+                                Propiedades
+                            </dt>
+                            <dd>
+                                - Son las formas en las cuales puedas dar estilo a un elemento (para el caso del elemento <i>p</i>). Aquí puedes poner las propiedades
+                                validas en <em>CSS3</em> que desees modificar.
+                            </dd>
+                            <dt>
+                                Valor de la Propiedad
+                            </dt>
+                            <dd>
+                                - Esta permite eligir el valor que se desea asignar a la propiedad (para el caso del elemento <i>p</i> se usa el rojo como color).
+                            </dd>
+                        </section>
+                    </article>
+                </section>
+            </div>
+        </div>
         <footer>
             <p>
                 Craeado por Juan Manuel Leal Oliva 2019.
             </p>
         </footer>
-
-
-
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
