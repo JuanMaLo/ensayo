@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="../../css/style_css.css" rel="stylesheet" type="text/css">
+    <title>CSS3</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header_css">
+            <h1>
+                CSS3
+            </h1>
+        </header>
+        <nav class="menu">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html5/index.html">HTML5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">CSS3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../responsive_web/index.html">Responsive Web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../amp/index.html">AMP</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="col-3">
+                <aside>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Definición</a>
+                            </li>
+                            <li>
+                                Unidades Relativas y Absolutas
+                            </li>
+                            <li>
+                                <a href="selectores.html">ID y CLASS</a>
+                            </li>
+                            <li>
+                                <a href="media.html">Media Queries en CSS</a>
+                            </li>
+                            <li>
+                                <a href="funcionamiento.html">
+                                    ¿Cómo funciona el CSS3?
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+            <div class="col-9">
+                <section>
+                    <article>
+                        <h2>Unidades Relativas y Absolutas</h2>
+                        <p>
+                            ¿Cuál es la diferencia entre una unidad relativa y una absoluta en CSS? Bien, una unidad <em>absoluta</em>
+                            en <i>CSS</i> utiliza magnitude que se indica de forma independiente y precisa; mientras que una unidad <em>relativa</em>
+                            usan un tamaño base para poder ser genedaras.
+                        </p>
+                        <p>
+                            La desventaja de usar unidades <em>absolutas</em> radica principalmente en que estas afectan la resolución de un dispositivo por ser
+                            precisas, mientras que la desventaja de las unidades <em>relativas</em> es que no tenemos forma de saber el tamaño de un elemento.
+                        </p>
+                    </article>
+                    <article>
+                        <table>
+                            <tr>
+                                <th colspan="3">
+                                    <h3>Unidades Absolutas</h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Unidad
+                                </th>
+                                <th>
+                                    Valor
+                                </th>
+                                <th>
+                                    Descripción
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    in
+                                </td>
+                                <td>
+                                    2.54 cm.
+                                </td>
+                                <td>
+                                    Pulgadas, usado en el mundo anglosajón.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    cm
+                                </td>
+                                <td>
+                                    1 cm.
+                                </td>
+                                <td>
+                                    Centímetro, usado en los medios de impresión
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    mm
+                                </td>
+                                <td>
+                                    0.1 cm
+                                </td>
+                                <td>
+                                    Milímetros
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    pt
+                                </td>
+                                <td>
+                                    1/72 pulgadas
+                                </td>
+                                <td>
+                                    Puntos, usada en tipografía, Debido a la popularidad de los procesadores de texto (que usan esta unidad de medida por defecto), es una medida que, referida a la letra.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    pc
+                                </td>
+                                <td>
+                                    1pc = 12 pt, 6pc = 1 pulgada
+                                </td>
+                                <td>
+                                    Pica
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>px</td>
+                                <td>
+                                    un byte
+                                </td>
+                                <td>
+                                    <a href="https://es.wikipedia.org/wiki/P%C3%ADxel">Pixel</a> Esta medida es relativa respecto al dispositivo de salida. Ya que en cada dispositivo el tamaño del píxel varía.
+                                </td>
+                            </tr>
+                        </table>
+                    </article>
+                    <article>
+                        <table>
+                            <tr>
+                                <th colspan="3">
+                                    <h3>Unidades Relativas</h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    Unidad
+                                </th>
+                                <th>
+                                    Valor
+                                </th>
+                                <th>
+                                    Descripción
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    em
+                                </td>
+                                <td>
+                                    Toma el tamaño de la M mayúscula como base.
+                                </td>
+                                <td>
+                                    Tamaño relativo de letra. Hoy en día es la forma recomendada para indicar medidas en el diseño de páginas web. Esta unidad toma como tamaño base, el del elemento padre del actual.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ex</td>
+                                <td>
+                                    Tamaño relativo respecto a la letra equis minúscula (x)
+                                </td>
+                                <td>
+                                    2x indica que el tipo de letra aumenta hasta ocupar el doble la letra x mayúscula. Con 0.5x ocuparía la mitad
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ch
+                                </td>
+                                <td>
+                                    Altura relativa al número cero (0) en la tipografía actual.
+                                </td>
+                                <td>
+                                    No se debe utilizar, ya que la mayoría de navegadores no le reconoce y no aporta ninguna ventaja sobre las dos medidas anteriores.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    %
+                                </td>
+                                <td>
+                                    Porcentaje
+                                </td>
+                                <td>
+                                    Es relativo respecto del tamaño del elemento padre del elemento al que le ponemos esta medida. Así 50% para una tabla dentro del elemento body ocuparía la mitad de la pantalla, pero dentro de una capa ocuparía la mitad del tamaño de la capa. Para una letra, si indicamos un 50%, la letra será la mitad de alta respecto al tamaño base del elemento en el que nos encontramos.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    rem
+                                </td>
+                                <td>
+                                    Se basa en un tamaño relativo respecto de la raíz del documento (root em).
+                                </td>
+                                <td>
+                                    Es muy exitosa actualmente, ya que elimina algunos problemas que tienen los diseñadores al utilizar em como unidad de medida.
+                                    Es decir funciona como la unidad em, pero tomando como base de la fuente la letra asignada por defecto a la raíz (al elemento html).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    vw
+                                </td>
+                                <td>
+                                    equivale al 1% del tamaño del ancho del área visible de la página (el llamado viewport).
+                                </td>
+                                <td>
+                                    Aporta como ventaja el hecho de que se tiene en cuenta lo que mide el dispositivo, lo que le hace una medida relativa de verdadera objetividad.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    vh
+                                </td>
+                                <td>
+                                    se refiere al 1% de la altura total del área visible de la página.
+                                </td>
+                                <td>
+                                    Es una medida muy moderna (sólo los navegadores más actualizados la reconocen)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    vmin
+                                </td>
+                                <td>
+                                     Usa la menor medida entre vw y vh.
+                                </td>
+                                <td>
+                                    Es una medida muy moderna (sólo los navegadores más actualizados la reconocen)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>vmax</td>
+                                <td> Usa la mayor medida entre vw y vh.</td>
+                                <td>
+                                    Es una medida muy moderna (sólo los navegadores más actualizados la reconocen)
+                                </td>
+                            </tr>
+                        </table>
+                    </article>
+                    <article>
+                        <h3>Unidades para los colores CSS</h3>
+                        <p>
+                            En CSS existen diversas notaciones para usar los colores en una regla (RGB, HEX, HSL, RGBA, HSLA), siendo la más
+                            la más popular el <em>HEXADECIMAL (HEX)</em> (por usar númeración de base 16), donde después del símbolo <strong>#</strong>
+                            las dos primeras cifras para el nivel de rojo, las siguietes dos para el nivel de azul y las últimas dos para el nivel de azul.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Si deseas mayor información sobre los temas que tratamos aquí, te dojo las ligas siguientes:
+                        </p>
+                        <p>
+                            <a href="https://jorgesanchez.net/manuales/html/unidades-colores-css.html">Unidades y colores</a>
+                        </p>
+                        <p>
+                            <a href="http://w3.unpocodetodo.info/css3/hex.php">Explicación de los colores en hexadecimales</a>
+                        </p>
+                        <p>
+                            <a href="http://w3.unpocodetodo.info/css3/hex.php">Calculadora de unidades</a>
+                        </p>
+                        <p>
+                            <a href="https://www.w3schools.com/css/css_colors.asp">Ejemplo y aplicación de las unidades de colores en CSS</a>
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <p>
+                Craeado por Juan Manuel Leal Oliva 2019.
+            </p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
