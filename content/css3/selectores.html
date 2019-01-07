@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <header id="header_css">
+        <header class="header_css">
             <h1>
                 CSS3
             </h1>
@@ -25,9 +25,6 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">CSS3</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../responsive_web/index.html">Responsive Web</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../amp/index.html">AMP</a>
@@ -51,11 +48,6 @@
                             <li>
                                 <a href="media.html">Media Queries en CSS</a>
                             </li>
-                            <li>
-                                <a href="funcionamiento.html">
-                                    ¿Cómo funciona el CSS3?
-                                </a>
-                            </li>
                         </ul>
                     </nav>
                 </aside>
@@ -63,6 +55,81 @@
             <div class="col-9">
                 <article>
                     <h2>Id y Class</h2>
+                    <h4>Class (Clase '.')</h4>
+                    <p>
+                        Una <em>clase</em> es una declaración que se va estar usando constantemente en una página web. Estas clases
+                        generalmente tienen un nombre despúes del punto (.rojo) con el que se identificara para poder hacer uso de ella.
+                    </p>
+                    <h4>Id ('#' almohadilla)</h4>
+                    <p>
+                        Un <em>id</em> se usa para afectar con un estilo único a un elemento dentro de una página web.
+                    </p>
+                    <h3>Funcionamiento de CSS</h3>
+                    <p>Para que un navegador web muestre una página web con <em>CSS</em> ocurre lo siguiente:</p>
+                    <ol>
+                        <li>
+                            El navegador web convierte (analiza gramaticalmente)  <i>HTML</i> y <em>CSS</em> en un <i><a href="https://developer.mozilla.org/es/docs/Glossary/DOM">DOM</a></i>
+                            para luego combinar el contenido con su estilo.
+                        </li>
+                        <li>
+                            Lo que nos permite ver el contenido del <i>DOM</i>.
+                        </li>
+                    </ol>
+                    <p>
+                        En la imagen de abajo podrás obtener mayor información.
+                    </p>
+                    <p>
+                        <a href="#">
+                            <img src="https://mdn.mozillademos.org/files/11781/rendering.svg" alt="Funcionamiento del CSS" class="img-fluid">
+                        </a>
+                    </p>
+                    <p>
+                        Lo que me lleva a la siguiente duda, <strong>¿cómo determinar que tiene más peso en un selector?</strong>.
+                    </p>
+                </article>
+                <article>
+                    <h3>Especifidad</h3>
+                    <p>
+                        Le especifidad, es la manera en la que los navegadores deciden que valores de una propiedad <em>CSS</em>, son más
+                        relevantes para un <i>elemento</i>, para poder ser aplicados, esta basada en la regla de coicidencia que están compuestas
+                        por diferentes tipos de <i>selectores</i> de <em>CSS</em>. Si quieres aprender más sobre la especifidad, da click al siguiente
+                        enlace <a href="https://developer.mozilla.org/es/docs/Web/CSS/Especificidad">especifidad a profundidad.</a>
+                    </p>
+                    <p>
+                        El peso de un <i>selector</i> se determina de la siguiente manera:
+                    </p>
+                    <ol>
+                        <li>
+                            Selector "id" (1-0-0).
+                        </li>
+                        <li>
+                            Selector "class" (0-1-0)
+                        </li>
+                        <li>
+                            Selectorde tipo (0-0-1)
+                        </li>
+                    </ol>
+                    <p>
+                        En las siguientes ligas encontras información útil para profundizar en el tema de selectores:
+                    </p>
+                    <p>
+                        <a href="https://code.i-harness.com/es/q/bb5ef8">Rendimiento en CSS</a>
+                    </p>
+                    <p>
+                        <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Introduction_to_CSS/Selectores_simples"> Selectores simples</a>
+                    </p>
+                    <p>
+                        <a href="https://uniwebsidad.com/libros/css">Introducción a CSS</a>
+                    </p>
+                    <p>
+                        <a href="https://www.w3.org/TR/selectors-3/">Selectores nivel 3</a>
+                    </p>
+                    <p>
+                        <a href="https://specificity.keegan.st/"><strong>Calculadora para entender la especifidad de CSS</strong></a>
+                    </p>
+                    <p>
+                        <a href="https://code.tutsplus.com/es/tutorials/the-30-css-selectors-you-must-memorize--net-16048">30 Selectores importantes</a>
+                    </p>
                 </article>
             </div>
         </div>

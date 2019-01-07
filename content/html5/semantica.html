@@ -5,111 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="../../css/style_css.css" rel="stylesheet" type="text/css">
     <title>HTML5</title>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header_css">
             <h1>
                 HTML5
             </h1>
         </header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../../index.html">Inicio</a>
+        <nav class="menu">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Inicio</a>
                 </li>
-                <li>
-                    <a href="../html5/index.html">HTML5</a>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">HTML5</a>
+
                 </li>
-                <li>
-                    <a href="../css3/index.html">CSS3</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../css3/index.html">CSS3</a>
                 </li>
-                <li>
-                    <a href="../responsive_web/index.html">Responsive Web</a>
-                </li>
-                <li>
-                    <a href="../amp/index.html">AMP</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="../amp/index.html">AMP</a>
                 </li>
             </ul>
         </nav>
-        <section>
-            <article>
-                <h2>Semántica</h2>
-                <p>
-                    En la nueva semántica de <em>HTML5</em> debemos tener muy en cuenta la estructura básica, asi como el uso adecuando de las
-                    etiquetas <em>html</em> que se van a usar en nuestra página web, a continuación una imágen que muestra una estructura básica
-                    de <em>html5</em>
-                </p>
-                <a href="https://alistapart.com/article/previewofhtml5" target="_blank">
-                    <img src="https://alistapart.com/d/previewofhtml5/structure-html5.gif" alt="Estructura de HTML5">
-                </a>
-                <p>
-                    <a href="https://www.azulweb.net/tutorial-html5-estructura-basica-en-html5/" target="_blank">Aquí</a> podás observar una forma de estructura básica que te permitira enteder mejor la semántica de <em>html5</em>
-                </p>
+        <div class="row">
+            <div class="col-3">
+                <aside>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Definición</a>
+                            </li>
+                            <li>
+                                Semántica
+                            </li>
+                            <li>
+                                <a href="bibliografia.html">Bibliografía</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+            <div class="col-9">
                 <section>
-                    <h3>Nueas etiquetas</h3>
-                    <ul>
-                        <li>
-                            <strong>section:</strong>
-                            se utiliza para representar una sección "general" dentro de un documento o aplicación, como un capítulo de un libro. Puede contener subsecciones y si lo acompañamos de h1-h6 podemos estructurar mejor toda la página creando jerarquías del contenido, algo muy favorable para el buen posicionamiento web.
-                        </li>
-                        <li>
-                            <strong>article:</strong>
-                            representa un componente de una página que consiste en una composición autónoma en un documento, página, aplicación, o sitio web con la intención de que pueda ser reutilizado y repetido. Podría utilizarse en los artículos de los foros, una revista o el artículo de periódico, una entrada de un blog, un comentario escrito por un usuario, un widget interactivo o cualquier otro artículo independiente de contenido. Cuando los elementos de <em>article</em> son anidados, los elementos interiores representan los artículos que en principio son relacionados con el contenido del artículo externo. Por ejemplo, un artículo de un blog que permite comentarios de usuario, dichos comentarios se podrían representar con <em>article</em>.
-                        </li>
-                        <li>
-                            <strong>aside:</strong>
-                            representa una sección de la página que abarca un contenido relacionado con el contenido que lo rodea, por lo que se le puede considerar un contenido independiente. Este elemento puede utilizarse para efectos tipográficos, barras laterales, elementos publicitarios, para grupos de elementos de la navegación, u otro contenido que se considere separado del contenido principal de la página.
-                        </li>
-                        <li>
-                            <strong>header:</strong>
-                             representa un grupo de artículos introductorios o de navegación. Está destinado a contener por lo general la cabecera de la sección (un elemento h1-h6 o un elemento hgroup), pero no es necesario.
-                        </li>
-                        <li>
-                            <strong>nav:</strong>
-                             representa una sección de una página que enlaza a otras páginas o a otras partes dentro de la página. No todos los grupos de enlaces en una página necesita estar en un elemento nav, sólo las secciones que constan de bloques de navegación principales son apropiados para el elemento de navegación.
-                        </li>
-                        <li>
-                            <strong>footer:</strong>
-                             representa el pie de una sección, con información acerca de la página/sección que poco tiene que ver con el contenido de la página, como el autor, el copyright o el año.
-                        </li>
-                        <li>
-                            <strong>hgroup:</strong>
-                            representa el encabezado de una sección. El elemento se utiliza para agrupar un conjunto de elementos h1-h6 cuando el título tiene varios niveles, tales como subtítulos o títulos alternativos.
-                        </li>
-                        <li>
-                            <strong>time:</strong>
-                            representa o bien una hora (en formato de 24 horas), o una fecha precisa en el calendario gregoriano (en formato ISO), opcionalmente con un tiempo y un desplazamiento de zona horaria.
-                        </li>
-                    </ul>
+                    <article>
+                        <h2>Semántica</h2>
+                        <p>
+                            En la nueva semántica de <em>HTML5</em> debemos tener muy en cuenta la estructura básica, asi como el uso adecuando de las
+                            etiquetas <em>html</em> que se van a usar en nuestra página web, a continuación una imágen que muestra una estructura básica
+                            de <em>html5</em>
+                        </p>
+                        <a href="https://alistapart.com/article/previewofhtml5" target="_blank">
+                            <img src="https://alistapart.com/d/previewofhtml5/structure-html5.gif" alt="Estructura de HTML5" class="img-fluid">
+                        </a>
+                        <p>
+                            <a href="https://www.azulweb.net/tutorial-html5-estructura-basica-en-html5/" target="_blank">Aquí</a> podás observar una forma de estructura básica que te permitira enteder mejor la semántica de <em>html5</em>
+                        </p>
+                        <section>
+                            <h3>Nueas etiquetas</h3>
+                            <ul>
+                                <li>
+                                    <strong>section:</strong>
+                                    se utiliza para representar una sección "general" dentro de un documento o aplicación, como un capítulo de un libro. Puede contener subsecciones y si lo acompañamos de h1-h6 podemos estructurar mejor toda la página creando jerarquías del contenido, algo muy favorable para el buen posicionamiento web.
+                                </li>
+                                <li>
+                                    <strong>article:</strong>
+                                    representa un componente de una página que consiste en una composición autónoma en un documento, página, aplicación, o sitio web con la intención de que pueda ser reutilizado y repetido. Podría utilizarse en los artículos de los foros, una revista o el artículo de periódico, una entrada de un blog, un comentario escrito por un usuario, un widget interactivo o cualquier otro artículo independiente de contenido. Cuando los elementos de <em>article</em> son anidados, los elementos interiores representan los artículos que en principio son relacionados con el contenido del artículo externo. Por ejemplo, un artículo de un blog que permite comentarios de usuario, dichos comentarios se podrían representar con <em>article</em>.
+                                </li>
+                                <li>
+                                    <strong>aside:</strong>
+                                    representa una sección de la página que abarca un contenido relacionado con el contenido que lo rodea, por lo que se le puede considerar un contenido independiente. Este elemento puede utilizarse para efectos tipográficos, barras laterales, elementos publicitarios, para grupos de elementos de la navegación, u otro contenido que se considere separado del contenido principal de la página.
+                                </li>
+                                <li>
+                                    <strong>header:</strong>
+                                     representa un grupo de artículos introductorios o de navegación. Está destinado a contener por lo general la cabecera de la sección (un elemento h1-h6 o un elemento hgroup), pero no es necesario.
+                                </li>
+                                <li>
+                                    <strong>nav:</strong>
+                                     representa una sección de una página que enlaza a otras páginas o a otras partes dentro de la página. No todos los grupos de enlaces en una página necesita estar en un elemento nav, sólo las secciones que constan de bloques de navegación principales son apropiados para el elemento de navegación.
+                                </li>
+                                <li>
+                                    <strong>footer:</strong>
+                                     representa el pie de una sección, con información acerca de la página/sección que poco tiene que ver con el contenido de la página, como el autor, el copyright o el año.
+                                </li>
+                                <li>
+                                    <strong>hgroup:</strong>
+                                    representa el encabezado de una sección. El elemento se utiliza para agrupar un conjunto de elementos h1-h6 cuando el título tiene varios niveles, tales como subtítulos o títulos alternativos.
+                                </li>
+                                <li>
+                                    <strong>time:</strong>
+                                    representa o bien una hora (en formato de 24 horas), o una fecha precisa en el calendario gregoriano (en formato ISO), opcionalmente con un tiempo y un desplazamiento de zona horaria.
+                                </li>
+                            </ul>
+                        </section>
+                        <p>
+                            Algo a notar importante es saber cuando usar una etiqueta apropiadamente, los chicos de HTML5 Doctor nos porporcionan un algoritmo para determinar la estructura apropidada (si deseas más información dale click a la imagen de abajo).
+                            <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf" target="_blank">
+                                <img src="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png" alt="Algoritmo de HTML5 Doctor" class="img-fluid">
+                            </a>
+                        </p>
+                        <p>
+                            Tambien te recomiendo leas el artículo que tiene <em>Mozilla Firefox</em> donde te da uno ejemplos del uso de la nueva estructura de <em>HTML5</em> en el siguiente link <a href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" target="_blank">Html5</a>
+                        </p>
+                    </article>
                 </section>
-                <p>
-                    Algo a notar importante es saber cuando usar una etiqueta apropiadamente, los chicos de HTML5 Doctor nos porporcionan un algoritmo para determinar la estructura apropidada (si deseas más información dale click a la imagen de abajo).
-                    <a href="http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf" target="_blank">
-                        <img src="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png" alt="Algoritmo de HTML5 Doctor">
-                    </a>
-                </p>
-                <p>
-                    Tambien te recomiendo leas el artículo que tiene <em>Mozilla Firefox</em> donde te da uno ejemplos del uso de la nueva estructura de <em>HTML5</em> en el siguiente link <a href="https://developer.mozilla.org/es/docs/Sections_and_Outlines_of_an_HTML5_document" target="_blank">Html5</a>
-                </p>
-            </article>
-        </section>
-        <aside>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Definición</a>
-                    </li>
-                    <li>
-                        Semántica
-                    </li>
-                    <li>
-                        <a href="bibliografia.html">Bibliografía</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
+            </div>
+        </div>
         <footer>
             <p>
                 Craeado por Juan Manuel Leal Oliva 2019.
